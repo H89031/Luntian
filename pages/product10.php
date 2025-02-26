@@ -362,11 +362,11 @@
             <input type="text" class="searchbar" placeholder="Search...">
         </div>
         <div class="bag">
-            <a href="cart.php"><img src="../images/bagicon.png"></a>
+            <a href="cart.php?id=<?php echo $id; ?>"><img src="../images/bagicon.png"></a>
         </div>
         <div class="profile">
-            <a href="profile.php"><img src="../images/profile.png"></a>
-            <a href="profile.php" style="text-decoration-color: white;"><p id="usrName" style="margin: 0; font-size: 20px; color: white;">Username</p></a>
+            <a href="profile.php?id=<?php echo $id; ?>"><img src="../images/profile.png"></a>
+            <a href="profile.php?id=<?php echo $id; ?>" style="text-decoration-color: white;"><p id="usrName" style="margin: 0; font-size: 20px; color: white;">Username</p></a>
         </div>
         <p>
     </div>
@@ -393,7 +393,7 @@
             </div>
             <div class="dits">
                 <img src="../images/store.png">
-                <p style="font-weight: bold;"><a href="store.php" style="text-decoration-color: white; color: black;">Siotees Garden</a><span style="color: #38843a; font-size: 10px; margin-left: 10px;">4.6</span></p>
+                <p style="font-weight: bold;"><a href="store.php?id=<?php echo $id; ?>" style="text-decoration-color: white; color: black;">Siotees Garden</a><span style="color: #38843a; font-size: 10px; margin-left: 10px;">4.6</span></p>
                 <img src="../images/1star.png" style="margin-top: 19px; margin-left: 3px; height: 15px; ">
             </div>
             <div class="dits">
@@ -470,25 +470,25 @@
 
     <!-- Random Products -->
     <div class="other">
-        <div class="grid-item" onclick="window.location.href='product12.php';">
+        <div class="grid-item" onclick="window.location.href='product12.php?id=<?php echo $id; ?>';">
             <img src="../images/Malvarosa.png">
             <p class="name">Malvarosa (Pelargonium graveolens) Anti-Mosquito</p>
             <p class="price">₱129</p>
             <p class="detail">274 sold | Novaliches, Quezon City</p>
         </div>
-        <div class="grid-item" onclick="window.location.href='product9.php';">
+        <div class="grid-item" onclick="window.location.href='product9.php?id=<?php echo $id; ?>';">
             <img src="../images/Monstera.png">
             <p class="name">Monstera Deliciosa (Swiss Cheese Plant)</p>
             <p class="price">₱1,200</p>
             <p class="detail">101 sold | Batasan Hills, Quezon City</p>
         </div>
-        <div class="grid-item" onclick="window.location.href='product6.php';">
+        <div class="grid-item" onclick="window.location.href='product6.php?id=<?php echo $id; ?>';">
             <img src="../images/JadeLucky.png">
             <p class="name">Jade Lucky Plant (Crassula ovata)</p>
             <p class="price">₱199</p>
             <p class="detail">5 sold | North Fairview, Quezon City</p>
         </div>
-        <div class="grid-item" onclick="window.location.href='product1.php';">
+        <div class="grid-item" onclick="window.location.href='product1.php?id=<?php echo $id; ?>';">
             <img src="../images/SnakePlant.jpg">
             <p class="name">Outdoor Snake Plant (Dracaena trifasciata)</p>
             <p class="price">₱650</p>

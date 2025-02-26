@@ -362,11 +362,11 @@
             <input type="text" class="searchbar" placeholder="Search...">
         </div>
         <div class="bag">
-            <a href="cart.php"><img src="../images/bagicon.png"></a>
+            <a href="cart.php?id=<?php echo $id; ?>"><img src="../images/bagicon.png"></a>
         </div>
         <div class="profile">
-            <a href="profile.php"><img src="../images/profile.png"></a>
-            <a href="profile.php" style="text-decoration-color: white;"><p id="usrName" style="margin: 0; font-size: 20px; color: white;">Username</p></a>
+            <a href="profile.php?id=<?php echo $id; ?>"><img src="../images/profile.png"></a>
+            <a href="profile.php?id=<?php echo $id; ?>" style="text-decoration-color: white;"><p id="usrName" style="margin: 0; font-size: 20px; color: white;">Username</p></a>
         </div>
         <p>
     </div>
@@ -393,7 +393,7 @@
             </div>
             <div class="dits">
                 <img src="../images/store.png">
-                <p style="font-weight: bold;"><a href="store.php" style="text-decoration-color: white; color: black;">Siotees Garden</a><span style="color: #38843a; font-size: 10px; margin-left: 10px;">4.6</span></p>
+                <p style="font-weight: bold;"><a href="store.php?id=<?php echo $id; ?>" style="text-decoration-color: white; color: black;">Siotees Garden</a><span style="color: #38843a; font-size: 10px; margin-left: 10px;">4.6</span></p>
                 <img src="../images/1star.png" style="margin-top: 19px; margin-left: 3px; height: 15px; ">
             </div>
             <div class="dits">
@@ -469,25 +469,25 @@
 
     <!-- Random Products -->
     <div class="other">
-        <div class="grid-item" onclick="window.location.href='product6.php';">
+        <div class="grid-item" onclick="window.location.href='product6.php?id=<?php echo $id; ?>';">
             <img src="../images/JadeLucky.png">
             <p class="name">Jade Lucky Plant (Crassula ovata)</p>
             <p class="price">₱199</p>
             <p class="detail">5 sold | Novaliches, Quezon City</p>
         </div>
-        <div class="grid-item" onclick="window.location.href='product8.php';">
+        <div class="grid-item" onclick="window.location.href='product8.php?id=<?php echo $id; ?>';">
             <img src="../images/Peppermint.png">
             <p class="name">Peppermint Herbal Plant (Mentha piperita)</p>
             <p class="price">₱350</p>
             <p class="detail">450 sold | Batasan Hills, Quezon City</p>
         </div>
-        <div class="grid-item" onclick="window.location.href='product2.php';">
+        <div class="grid-item" onclick="window.location.href='product2.php?id=<?php echo $id; ?>';">
             <img src="../images/AloeVera.png">
             <p class="name">Aloe Vera Plant | Fully Rooted | Live Plant</p>
             <p class="price">₱149</p>
             <p class="detail">79 sold | North Fairview, Quezon City</p>
         </div>
-        <div class="grid-item" onclick="window.location.href='product5.php';">
+        <div class="grid-item" onclick="window.location.href='product5.php?id=<?php echo $id; ?>';">
             <img src="../images/Calathea.png">
             <p class="name">Calathea Triostar plant</p>
             <p class="price">₱99</p>

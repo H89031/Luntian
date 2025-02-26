@@ -362,11 +362,11 @@
             <input type="text" class="searchbar" placeholder="Search...">
         </div>
         <div class="bag">
-            <a href="cart.php"><img src="../images/bagicon.png"></a>
+            <a href="cart.php?id=<?php echo $id; ?>"><img src="../images/bagicon.png"></a>
         </div>
         <div class="profile">
-            <a href="profile.php"><img src="../images/profile.png"></a>
-            <a href="profile.php" style="text-decoration-color: white;"><p id="usrName" style="margin: 0; font-size: 20px; color: white;">Username</p></a>
+            <a href="profile.php?id=<?php echo $id; ?>"><img src="../images/profile.png"></a>
+            <a href="profile.php?id=<?php echo $id; ?>" style="text-decoration-color: white;"><p id="usrName" style="margin: 0; font-size: 20px; color: white;">Username</p></a>
         </div>
         <p>
     </div>
@@ -393,7 +393,7 @@
             </div>
             <div class="dits">
                 <img src="../images/store.png">
-                <p style="font-weight: bold;"><a href="store.php" style="text-decoration-color: white; color: black;">Siotees Garden</a><span style="color: #38843a; font-size: 10px; margin-left: 10px;">4.6</span></p>
+                <p style="font-weight: bold;"><a href="store.php?id=<?php echo $id; ?>" style="text-decoration-color: white; color: black;">Siotees Garden</a><span style="color: #38843a; font-size: 10px; margin-left: 10px;">4.6</span></p>
                 <img src="../images/1star.png" style="margin-top: 19px; margin-left: 3px; height: 15px; ">
             </div>
             <div class="dits">
@@ -469,25 +469,25 @@
 
     <!-- Random Products -->
     <div class="other">
-        <div class="grid-item" onclick="window.location.href='product8.php';">
+        <div class="grid-item" onclick="window.location.href='product8.php?id=<?php echo $id; ?>';">
             <img src="../images/Peppermint.png">
             <p class="name">Peppermint Herbal Plant (Mentha piperita)</p>
             <p class="price">₱350</p>
             <p class="detail">450 sold | Novaliches, Quezon City</p>
         </div>
-        <div class="grid-item" onclick="window.location.href='product3.php';">
+        <div class="grid-item" onclick="window.location.href='product3.php?id=<?php echo $id; ?>';">
             <img src="../images/Bougainvillea.png">
             <p class="name">Rare rooted Bougainvillea</p>
             <p class="price">₱250</p>
             <p class="detail">194 sold | Batasan Hills, Quezon City</p>
         </div>
-        <div class="grid-item" onclick="window.location.href='product7.php';">
+        <div class="grid-item" onclick="window.location.href='product7.php?id=<?php echo $id; ?>';">
             <img src="../images/PalmTree.png">
             <p class="name">Palmera Tree (Areca Palm) Indoor and Outdoor | Fully Rooted Live...</p>
             <p class="price">₱159</p>
             <p class="detail">200 sold | North Fairview, Quezon City</p>
         </div>
-        <div class="grid-item" onclick="window.location.href='product9.php';">
+        <div class="grid-item" onclick="window.location.href='product9.php?id=<?php echo $id; ?>';">
             <img src="../images/Monstera.png">
             <p class="name"> Monstera Deliciosa (Swiss Cheese Plant)</p>
             <p class="price">₱1,200</p>
@@ -498,5 +498,4 @@
 </html>
 <?php
     include("usrNamePlacer.php");
-    
 ?>

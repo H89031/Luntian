@@ -469,25 +469,25 @@
 
     <!-- Random Products -->
     <div class="other">
-        <div class="grid-item" onclick="window.location.href='product10.php';">
+        <div class="grid-item" onclick="window.location.href='product10.php?id=<?php echo $id; ?>';">
             <img src="../images/LemonPine.png">
             <p class="name">Lemon Pine Tree (Cupressus macrocarpa 'Goldcrest')</p>
             <p class="price">₱599</p>
             <p class="detail">1 sold | Novaliches, Quezon City</p>
         </div>
-        <div class="grid-item" onclick="window.location.href='product4.php';">
+        <div class="grid-item" onclick="window.location.href='product4.php?id=<?php echo $id; ?>';">
             <img src="../images/Sampaguita.jpg">
             <p class="name">Sampaguita (Jasminum sambac) flower</p>
             <p class="price">₱129</p>
             <p class="detail">99 sold | Batasan Hills, Quezon City</p>
         </div>
-        <div class="grid-item" onclick="window.location.href='product9.php';">
+        <div class="grid-item" onclick="window.location.href='product9.php?id=<?php echo $id; ?>';">
             <img src="../images/Monstera.png">
             <p class="name">Monstera Deliciosa (Swiss Cheese Plant)</p>
             <p class="price">₱1,200</p>
             <p class="detail">101 sold | North Fairview, Quezon City</p>
         </div>
-        <div class="grid-item" onclick="window.location.href='product3.php';">
+        <div class="grid-item" onclick="window.location.href='product3.php?id=<?php echo $id; ?>';">
             <img src="../images/Bougainvillea.png">
             <p class="name">Rare rooted Bougainvillea.</p>
             <p class="price">₱250</p>

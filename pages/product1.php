@@ -366,7 +366,7 @@
         </div>
         <div class="profile">
             <a href="profile.php?id=<?php echo $id; ?>"><img src="../images/profile.png"></a>
-            <a href="profile.php?id=<?php echo $id; ?>" style="text-decoration-color: white;"><p id="userName" style="margin: 0; font-size: 20px; color: white;">Username</p></a>
+            <a href="profile.php?id=<?php echo $id; ?>" style="text-decoration-color: white;"><p id="usrName" style="margin: 0; font-size: 20px; color: white;">Username</p></a>
         </div>
         <p>
     </div>
@@ -497,5 +497,4 @@
 </html>
 <?php
     include("usrNamePlacer.php");
-    
 ?>
