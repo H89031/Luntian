@@ -20,8 +20,7 @@
           font-family: Roboto, sans-serif;
           background-color: #f0efe7;
         }
-
-        /* Header area */
+        
         .fixed-box {
           position: fixed;
           top: 0;
