@@ -314,7 +314,7 @@
         <div class="logo" onclick="window.location.href='homepage.php?id=<?php echo $id; ?>';"></div>
         <div class="search">
         </div>
-        <button onclick="window.location.href='loginPage.php?id=<?php echo $id; ?>';" style="background-color: darkred; color: white;">Log Out</button>
+        <button onclick="window.location.href='loginPage.php';" style="background-color: darkred; color: white;">Log Out</button>
         <div class="bag">
             <a href="cart.php?id=<?php echo $id; ?>"><img src="../images/bagicon.png"></a>
         </div>
