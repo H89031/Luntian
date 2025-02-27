@@ -239,7 +239,7 @@
 
         <div class="dividerTop"></div>
 
-        <form>
+        <form action="" method="POST">
           <div class= "Info">
             <h4>Shop Name</h4>
             <input type="text" required placeholder="Shop Name" style="width: 400px;" required>
@@ -248,8 +248,8 @@
           <div class="Info">
             <h4>Contact</h4>
             <div class="form-row">
-              <input type="text" placeholder="Phone Number" required>
-              <input type="text" placeholder="Email Address" required />
+              <input type="text" placeholder="Phone Number" pattern="09[0-9]{9}"  oninput="this.value = this.value.replace(/[^0-9+]/g, '')" minlength="11" maxlength="11" required>
+              <input type="email" placeholder="Email Address" required />
             </div>
           </div>
 
@@ -271,12 +271,15 @@
 
           <div class="dividerBottom"></div>
 
-          <button class="btn_Ok" type="button" onclick="window.location.href='SellerSubmit.php?id=<?php echo $id; ?>';">Submit</button>
+          <input type="submit" name="btn_Ok" id="btn_Ok" class="btn_Ok" value="Submit">
         </form>
   </div>
 </body>
 </html>
 <?php
-    include("usrNamePlacer.php");
-    
+  include("usrNamePlacer.php");
+  include("connection.php");
+  if (isset($_POST['btn_Ok'])) {
+    Print "<script>window.location.assign('SellerSubmit.php?id=$id')</script>";
+  }
 ?>

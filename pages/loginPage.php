@@ -52,10 +52,18 @@
 
 		if ($res->num_rows>0) {
 			if ($row = $res->fetch_assoc()) {
-				$_SESSION['loggedin'] = true;
-				$_SESSION['ID'] = $row['RegID'];
-				Print '<script>alert("Welcome, '.$row['Username'].'!")</script>';
-				Print '<script>window.location.assign("homepage.php?id='.$row['RegID'].'")</script>';
+				if ($row['Status'] == "Admin"){
+					$_SESSION['loggedin'] = true;
+					$_SESSION['ID'] = $row['RegID'];
+					Print '<script>alert("Welcome, '.$row['Username'].'!")</script>';
+					Print '<script>window.location.assign("adminDashboard.php?id='.$row['RegID'].'")</script>';
+				}else{
+					$_SESSION['loggedin'] = true;
+					$_SESSION['ID'] = $row['RegID'];
+					Print '<script>alert("Welcome, '.$row['Username'].'!")</script>';
+					Print '<script>window.location.assign("homepage.php?id='.$row['RegID'].'")</script>';
+				}
+				
 			}
 		} else {
 		Print '<script>alert("User not found!")</script>';

@@ -138,7 +138,7 @@
             <img src="../images/profile.png" alt="Profile" />
           </a>
           <a href="profile.php?id=<?php echo $id; ?>" style="text-decoration-color: white;">
-            <p class="username">Username</p>
+            <p id="usrName" class="username">Username</p>
           </a>
         </div>
      </div>
@@ -368,7 +368,7 @@
                       </a>
                   </li>
                   <li style="padding: 8px 10px; margin-left: -23px; margin-top: -15px;">
-                      <a href="loginPage.php?id=<?php echo $id; ?>" style="text-decoration: none; color: inherit; font-size: 13px;" 
+                      <a href="loginPage.php" style="text-decoration: none; color: inherit; font-size: 13px;" 
                          onmouseover="this.style.textDecoration='underline'" 
                          onmouseout="this.style.textDecoration='none'">
                          Logout
