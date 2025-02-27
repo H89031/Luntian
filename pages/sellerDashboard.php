@@ -8,8 +8,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Luntian | Seller Center</title>
     <link rel="icon" type="image/png" href="../images/tablogo.png">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap
+    " rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css
+    ">
 
     <style>
         * {
@@ -226,24 +228,24 @@
           font-size: 8px;
           font-weight: 400;
           position: absolute;
-          top: 8%;             
-          right: 30px;          
-          transform: translateY(-50%); 
+          top: 8%;             /* Center vertically */
+          right: 30px;          /* Align to the right */
+          transform: translateY(-50%); /* Adjust for vertical centering */
           color: #38843a;
         }
 
        .card5 {
-          background: #fff;
-          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-          padding: 25px;
-          text-align: left;
-          width: 1300px;
-          height: 245px;
-          max-width: 180%;
-          margin: 0 auto;
-          margin-left: -285px;
-          margin-top: -5px;
-          position: relative;
+        background: #fff;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 25px;
+        text-align: left;
+        width: 1300px;
+        height: 245px;
+        max-width: 180%;
+        margin: 0 auto;
+        margin-left: -285px;
+        margin-top: -5px;
+        position: relative;
       }
 
     </style>
@@ -554,13 +556,15 @@
           <h2 style="font-size: 20px; color: #333; margin-bottom: 10px; margin-top: 7px; text-align: left;">Shop Performance</h2>
           <p style="font-size: 17px; color: #1a73e8; font-weight: bold; margin: 5px 0; margin-top: 40px;">Excellent</p>
           <p style="font-size: 12px; color: #6d6d6d; margin: 5px 0; font-weight: normal; font-family: 'Roboto' sans-serif; margin-top: 10px;">All metrics are meeting the targets</p>
-          <h1 class="eme"><svg xmlns="http://www.w3.org/2000/svg" height="90px" width="20px" viewBox="0 -960 960 960" fill="#38843a">
+          <h1 class="eme"><svg xmlns="http://www.w3.org/2000/svg
+            " height="90px" width="20px" viewBox="0 -960 960 960" fill="#38843a">
           <path d="M560-80l400-400-400-400-71 71 329 329-329 329 71 71Z"/></svg></h1>
           <h1 style="font-size: 14px; color: #1a73e8; font-weight: bold; position: absolute; top: 37px; right: 48px; cursor: pointer;"><a href="#" style="text-decoration: none; color: #38843a;">More</a></h1>
       </div>
       <div class="card4">
         <h1 style="font-size: 20px; color: #333; margin-top: -2px; margin-left: 2px; text-align: left;">Announcements</h1>
-        <h1 class="eme2"><svg xmlns="http://www.w3.org/2000/svg" height="90px" width="20px" viewBox="0 -960 960 960" fill="#38843a">
+        <h1 class="eme2"><svg xmlns="http://www.w3.org/2000/svg
+            " height="90px" width="20px" viewBox="0 -960 960 960" fill="#38843a">
         <path d="M560-80l400-400-400-400-71 71 329 329-329 329 71 71Z"/></svg></h1>
         <a href="#" style="font-size: 14px; font-weight: bold; color: #38843a; text-decoration: none; position: absolute; top: 27px; right: 51px;">More</a>
         <img src="../images/announce.png" alt="Policy Update Image" style="width: 100%; height: auto; border-radius: 5px; margin-bottom: 15px; margin-top: 30px;">

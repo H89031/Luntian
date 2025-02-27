@@ -48,7 +48,7 @@
         }
 
         .search {
-            width: 45%;
+            width: 35%;
             background-color: transparent;
             padding: 5px;
             display: flex; 
@@ -311,9 +311,10 @@
 <body>
     <div class="fixed-box">
         <img src="../images/backicon.png" style="height: 20px;" onclick="history.back()">
-        <div class="logo"onclick="window.location.href='homepage.php?id=<?php echo $id; ?>';"></div>
+        <div class="logo" onclick="window.location.href='homepage.php?id=<?php echo $id; ?>';"></div>
         <div class="search">
         </div>
+        <button onclick="window.location.href='loginPage.php?id=<?php echo $id; ?>';" style="background-color: darkred; color: white;">Log Out</button>
         <div class="bag">
             <a href="cart.php?id=<?php echo $id; ?>"><img src="../images/bagicon.png"></a>
         </div>
