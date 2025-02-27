@@ -3,7 +3,8 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Luntian | Sign In</title>
+		<title>Luntian | Log In</title>
+		<link rel="icon" type="image/png" href="../images/tablogo.png">
 		<link rel="stylesheet" type="text/css" href="loginPage.css"> 
 		<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 	</head>

@@ -6,7 +6,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Luntian | Seller Center</title>
+    <title>Luntian | Admin Dashboard</title>
     <link rel="icon" type="image/png" href="../images/tablogo.png">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -125,141 +125,20 @@
           padding: 8px 0;
         }
 
-        .container {
-          display: grid;
-          grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); 
-          gap: 30px; 
-          padding: 20px; 
-          justify-content: center; 
-          align-items: start; 
-        }
-
-        .card1 {
-          background: #fff;
-          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-          padding: 25px; 
-          text-align: left;
-          width: 850px;
-          height: 180px;
-          max-width: 1000px; 
-          margin: 0 auto; 
-          margin-left: 220px;
-          margin-top: 70px;
-        }
-        .card1 h2 {
-          font-size: 20px;
-          color: #333;
-          margin-bottom: 10px;
-        }
-
-        .card1 p {
-          font-size: 16px;
-          color: #666;
-          margin: 5px 0;
-        }
-
-        .task-list p {
-          display: flex;
-          justify-content: space-between;
-          border-bottom: 1px solid #eee;
-          padding-bottom: 5px;
-          margin-bottom: 5px;
-        }
-
-        .card2 {
-          background: #fff;
-          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-          padding: 25px;
-          text-align: left;
-          width: 850px;
-          height: 180px;
-          max-width: 1000px;
-          margin: 0 auto;
-          margin-left: -285px;
-          margin-top: 270px;
-        }
-
-        .todo-item {
-          flex: 1;
-          margin: 0 10px;
-        }
-
-        .card3 {
-          background: #fff;
-          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-          padding: 25px;
-          text-align: left;
-          width: 400px;
-          height: 180px;
-          max-width: 100%;
-          margin: 0 auto;
-          margin-left: 76px;
-          margin-top: 70px;
-          position: relative; 
-        }
-
-        .eme {
-          font-size: 8px;
-          font-weight: 400;
-          position: absolute;
-          top: 26%;             
-          right: 30px;         
-          transform: translateY(-50%); 
-          color: #38843a;
-        }
-
-        .card4 {
-          background: #fff;
-          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-          padding: 25px;
-          text-align: left;
-          width: 400px;
-          height: auto;
-          max-width: 100%;
-          margin: 0 auto;
-          margin-left: 1083px;
-          margin-top: -210px;
-          position: relative;
-       }
-
-       .eme2 {
-          font-size: 8px;
-          font-weight: 400;
-          position: absolute;
-          top: 8%;             
-          right: 30px;          
-          transform: translateY(-50%); 
-          color: #38843a;
-        }
-
-       .card5 {
-          background: #fff;
-          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-          padding: 25px;
-          text-align: left;
-          width: 1300px;
-          height: 245px;
-          max-width: 180%;
-          margin: 0 auto;
-          margin-left: -285px;
-          margin-top: -5px;
-          position: relative;
-      }
-
     </style>
 </head>
 <body>
     <div class="fixed-box">
         <div class="logo"onclick="window.location.href='homepage.php?id=<?php echo $id; ?>';"></div>
         <div class="sellerR">
-          <h1>Seller Center</h1>
+          <h1>Admin Dashboard</h1>
         </div>
         <div class="profile">
           <a href="profile.php?id=<?php echo $id; ?>">
             <img src="../images/profile.png" alt="Profile" />
           </a>
           <a href="profile.php?id=<?php echo $id; ?>" style="text-decoration-color: white;">
-            <p id="usrName" class="username">Username</p>
+            <p class="username">Username</p>
           </a>
         </div>
      </div>
@@ -499,92 +378,6 @@
             </li>
         </ul>
     </div>
-    <div class="container">
-      <div class="card1">
-          <h2 style="font-size: 20px; color: #333; margin-bottom: 20px; margin-top: 10px; text-align: left;">To Do List</h2>
-          <div class="todo-list" style="display: flex; justify-content: space-around; text-align: center;">
-              <div class="todo-item" style="margin-top: 17px">
-                  <p class="count" style="font-size: 24px; font-weight: bold; color: #38843a; margin: 0;">5</p>
-                  <p style="font-size: 14px; color: #666; margin: 5px 0 0;">To-Process Shipment</p>
-              </div>
-              <div class="todo-item" style="margin-top: 17px">
-                  <p class="count" style="font-size: 24px; font-weight: bold; color: #38843a; margin: 0;">8</p>
-                  <p style="font-size: 14px; color: #666; margin: 5px 0 0;">Processed Shipment</p>
-              </div>
-              <div class="todo-item" style="margin-top: 17px">
-                  <p class="count" style="font-size: 24px; font-weight: bold; color: #38843a; margin: 0;">1</p>
-                  <p style="font-size: 14px; color: #666; margin: 5px 0 0;">Return/Refund/Cancel</p>
-              </div>
-              <div class="todo-item" style="margin-top: 17px">
-                  <p class="count" style="font-size: 24px; font-weight: bold; color: #38843a; margin: 0;">0</p>
-                  <p style="font-size: 14px; color: #666; margin: 5px 0 0;">Banned / Deboosted Products</p>
-              </div>
-          </div>
-      </div>
-        <div class="card2">
-          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
-              <h2 style="font-size: 20px; color: #333; margin: 0;">Business Insights</h2>
-              <p style="font-size: 12px; color: #888;">Real-time data until GMT+8 18:00 (Data changes are compared to yesterday)</p>
-          </div>
-
-          <div class="todo-list" style="display: flex; justify-content: space-between; text-align: center;">
-              <div class="todo-item" style="margin-top: 17px">
-                  <p style="font-size: 14px; color: #666; margin: 0;">Sales</p>
-                  <p class="count" style="font-size: 24px; font-weight: bold; color: #38843a; margin: 0;">₱5 000</p>
-                  <p style="font-size: 12px; color: #888; margin: 5px 0 0;">— 0.00%</p>
-              </div>
-              <div class="todo-item" style="margin-top: 17px">
-                  <p style="font-size: 14px; color: #666; margin: 0;">Vistors</p>
-                  <p class="count" style="font-size: 24px; font-weight: bold; color: #38843a; margin: 0;">25</p>
-                  <p style="font-size: 12px; color: #888; margin: 5px 0 0;">— 0.00%</p>
-              </div>
-              <div class="todo-item" style="margin-top: 17px">
-                  <p style="font-size: 14px; color: #666; margin: 0;">Page Views</p>
-                  <p class="count" style="font-size: 24px; font-weight: bold; color: #38843a; margin: 0;">15</p>
-                  <p style="font-size: 12px; color: #888; margin: 5px 0 0;">— 0.00%</p>
-              </div>
-              <div class="todo-item" style="margin-top: 17px">
-                  <p style="font-size: 14px; color: #666; margin: 0;">Orders</p>
-                  <p class="count" style="font-size: 24px; font-weight: bold; color: #38843a; margin: 0;">30</p>
-                  <p style="font-size: 12px; color: #888; margin: 5px 0 0;">— 0.00%</p>
-              </div>
-          </div>
-      </div>
-      <div class="card3">
-          <h2 style="font-size: 20px; color: #333; margin-bottom: 10px; margin-top: 7px; text-align: left;">Shop Performance</h2>
-          <p style="font-size: 17px; color: #1a73e8; font-weight: bold; margin: 5px 0; margin-top: 40px;">Excellent</p>
-          <p style="font-size: 12px; color: #6d6d6d; margin: 5px 0; font-weight: normal; font-family: 'Roboto' sans-serif; margin-top: 10px;">All metrics are meeting the targets</p>
-          <h1 class="eme"><svg xmlns="http://www.w3.org/2000/svg" height="90px" width="20px" viewBox="0 -960 960 960" fill="#38843a">
-          <path d="M560-80l400-400-400-400-71 71 329 329-329 329 71 71Z"/></svg></h1>
-          <h1 style="font-size: 14px; color: #1a73e8; font-weight: bold; position: absolute; top: 37px; right: 48px; cursor: pointer;"><a href="#" style="text-decoration: none; color: #38843a;">More</a></h1>
-      </div>
-      <div class="card4">
-        <h1 style="font-size: 20px; color: #333; margin-top: -2px; margin-left: 2px; text-align: left;">Announcements</h1>
-        <h1 class="eme2"><svg xmlns="http://www.w3.org/2000/svg" height="90px" width="20px" viewBox="0 -960 960 960" fill="#38843a">
-        <path d="M560-80l400-400-400-400-71 71 329 329-329 329 71 71Z"/></svg></h1>
-        <a href="#" style="font-size: 14px; font-weight: bold; color: #38843a; text-decoration: none; position: absolute; top: 27px; right: 51px;">More</a>
-        <img src="../images/announce.png" alt="Policy Update Image" style="width: 100%; height: auto; border-radius: 5px; margin-bottom: 15px; margin-top: 30px;">
-        <h2 style="font-size: 18px; color: #333; margin-bottom: 10px; margin-top: 7px; margin-left: 2px; text-align: left;">💡Policy Update: Seller Standards</h2>
-        <p style="font-size: 11px; color: #333; margin: 10px 0; line-height: 1.5; margin-left: 12px;">To enhance platform security and customer trust, Luntian has updated its seller guidelines starting March 1. Sellers must verify their business credentials, maintain an 85%+ fulfillment rate, and ensure accurate product listings. Non-compliance may lead to store restrictions or penalties. Stay compliant and grow with Luntian! 🚀</p>
-      </div>
-      <div class="card5">
-        <div style="width: 100%; max-width: 900px; height: 200px; background: #fff; border: 1px solid #ddd; border-radius: 10px; padding: 15px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); font-family: Arial, sans-serif; position: relative;">
-        <div style="display: flex; justify-content: space-between; align-items: center;">
-              <h1 style="font-size: 20px; color: #333; margin: 0; margin-top: 10px;">Luntian Ads</h1>
-        </div>
-        <div style="display: flex; align-items: center; gap: 10px; padding: 15px 0;">
-            <div>
-              <img src="../images/tablogo.png" alt="Shopee Ads Icon" style="width: 24px; height: 24px; margin-left: 15px;">
-            </div>
-            <div style="flex: 1;">
-              <p style="font-size: 16px; font-weight: bold; color: #333; margin: 0; margin-top: 20px;">Maximise your sales with Luntian Ads!</p>
-              <p style="font-size: 14px; color: #666; line-height: 1.5; margin: 5px 0 0; margin-left: -40px;">Learn more about Luntian Ads. Find the right way to advertise and make your Ads affordable.</p>
-            </div>
-        </div>
-              <button style="background: #fff; color: #38843a; padding: 8px 12px; border: 1px solid #154326; border-radius: 5px; cursor: pointer; font-size: 14px; font-weight: bold; position: absolute; bottom: 10px; right: 15px;">Learn More</button>
-        </div>
-      </div>
-    </div>
 </body>
 </html>
 
@@ -606,5 +399,4 @@
 </script>
 <?php
     include("usrNamePlacer.php");
-    
 ?>

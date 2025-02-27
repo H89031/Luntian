@@ -209,7 +209,7 @@
 </head>
 <body>
     <div class="fixed-box">
-        <div class="logo"></div>
+        <div class="logo"onclick="window.location.href='homepage.php?id=<?php echo $id; ?>';"></div>
         <div class="sellerR">
           <h1>Seller Registration</h1>
         </div>

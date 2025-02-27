@@ -311,7 +311,7 @@
 <body>
     <div class="fixed-box">
         <img src="../images/backicon.png" style="height: 20px;" onclick="history.back()">
-        <div class="logo"></div>
+        <div class="logo"onclick="window.location.href='homepage.php?id=<?php echo $id; ?>';"></div>
         <div class="search">
         </div>
         <div class="bag">

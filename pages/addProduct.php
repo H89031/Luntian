@@ -63,7 +63,7 @@
             position: absolute;
             color: #ccc;
             top: -9px;
-            left: 135px;
+            left: 140px;
         }
 
         .eme {
@@ -71,7 +71,7 @@
             font-weight: 400;
             position: absolute;
             top: -4px;
-            left: 205px;
+            left: 208px;
             color: white;
         }
 
@@ -175,6 +175,12 @@
             margin-left: 740px; 
         }
 
+        .tips:hover {
+            transform: translateY(-5px); /* Moves the element up by 5px */
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Adds a stronger shadow */
+            cursor: pointer; /* Shows a pointer cursor */
+        }
+
         .radType {
             display: flex;
             gap: 40px;
@@ -237,7 +243,7 @@
 </head>
 <body>
     <div class="fixed-box">
-        <div class="logo"></div>
+        <div class="logo"onclick="window.location.href='homepage.php?id=<?php echo $id; ?>';"></div>
         <div class="sellerR">
           <h1 class="one">
             <a href="sellerDashboard.php?id=<?php echo $id; ?>" style="text-decoration: none; color: inherit; font-weight: inherit;" 
@@ -253,7 +259,7 @@
           </p>
         </div>
         <div class="profile">
-          <a href="profile.php">
+          <a href="profile.php?id=<?php echo $id; ?>">
             <img src="../images/profile.png" alt="Profile" />
           </a>
           <a href="profile.php?id=<?php echo $id; ?>" style="text-decoration-color: white;">

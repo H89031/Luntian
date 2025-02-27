@@ -6,7 +6,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Luntian | Siotees Garden | Peppermint Herbal Plant (Mentha piperita) </title>
+    <title>Luntian</title>
+    <link rel="icon" type="image/png" href="../images/tablogo.png">
     <style>
         body {
             font-family: Roboto, sans-serif;
@@ -120,6 +121,7 @@
         }
 
         .info {
+            width: 500px;
             justify-content: left;
             text-align: left;
         }
@@ -340,6 +342,7 @@
         .name {
             font-size: 15px;
             line-height: 1.4;
+            height: 40px;
         }
 
         .price {
@@ -356,7 +359,7 @@
 </head>
 <body>
     <div class="fixed-box">
-        <div class="logo"></div>
+        <div class="logo" onclick="window.location.href='homepage.php?id=<?php echo $id; ?>';"></div>
         <div class="search">
             <img src="../images/searchicon.png">
             <input type="text" class="searchbar" placeholder="Search...">
@@ -375,8 +378,6 @@
         <div class="pics">
             <img src="../images/Peppermint.png" class="mainpic">
             <div class="smallpics">
-                <img src="../images/Peppermint.png" class="small">
-                <img src="../images/Peppermint.png" class="small">
                 <img src="../images/Peppermint.png" class="small">
             </div>
         </div>
@@ -415,8 +416,8 @@
                 <p>Safe Payment • Free & Easy Returns • Efficient Logistics ...</p>
             </div>
             <div class="dits">
-                <button style="background-color: #38843a;">Buy Now</button>
-                <button style="background-color: #154326;">Add to Cart</button>
+                <button style="background-color: #38843a;" id="checkout" onclick="checkout()">Buy Now</button>
+                <button style="background-color: #154326;" id="addtocart" onclick="addtocart()">Add to Cart</button>
             </div>
         </div>
     </div>
@@ -472,7 +473,7 @@
     <div class="other">
         <div class="grid-item" onclick="window.location.href='product7.php?id=<?php echo $id; ?>';">
             <img src="../images/PalmTree.png">
-            <p class="name">Palmera Tree (Areca Palm) Indoor and Outdoor | Fully Rooted Live Plant 1.5ft</p>
+            <p class="name">Palmera Tree (Areca Palm) Indoor and Outdoor | Fully Rooted Live...</p>
             <p class="price">₱159</p>
             <p class="detail">200 sold | Novaliches, Quezon City</p>
         </div>
@@ -490,14 +491,54 @@
         </div>
         <div class="grid-item" onclick="window.location.href='product3.php?id=<?php echo $id; ?>';">
             <img src="../images/Bougainvillea.png">
-            <p class="name">Rare rooted Bougainvillea</p>
+            <p class="name">Rare rooted Bougainvillea | Potted Plant for Sale</p>
             <p class="price">₱250</p>
             <p class="detail">194 sold | Kaligayahan, Quezon City</p>
         </div>
     </div>
 </body>
 </html>
+<script type="text/javascript">
+    function addtocart() {
+        let product = {
+            name: "Peppermint Herbal Plant (Mentha piperita)",
+            price: 350,
+            image: "../images/Peppermint.png",
+            quantity: 1
+        };
+
+        let addproduct = JSON.parse(localStorage.getItem("productlist")) || [];
+
+        let existingProduct = addproduct.find(item => item.name === product.name);
+
+        if (existingProduct) {
+            existingProduct.quantity += 1; 
+        } else {
+            addproduct.push(product); 
+        }
+
+        localStorage.setItem("productlist", JSON.stringify(addproduct));
+        alert("Product added to cart!");
+    }
+
+    function checkout() {
+        let product = {
+            name: "Peppermint Herbal Plant (Mentha piperita)",
+            price: 350,
+            image: "../images/Peppermint.png",
+            quantity: 1
+        };
+
+        let checkedProducts = JSON.parse(localStorage.getItem("checkedProducts")) || [];
+
+        checkedProducts.push(product);
+        
+        localStorage.setItem("checkedProducts", JSON.stringify(checkedProducts));
+
+        window.location.href = "checkout.php?id=<?php echo $id; ?>";
+    }
+    
+</script>
 <?php
     include("usrNamePlacer.php");
-    
 ?>

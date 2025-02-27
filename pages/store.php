@@ -7,6 +7,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Luntian | Siotees Garden</title>
+    <link rel="icon" type="image/png" href="../images/tablogo.png">
     <style>
         body {
             font-family: Roboto, sans-serif;
@@ -320,7 +321,7 @@
 </head>
 <body>
     <div class="fixed-box">
-        <div class="logo"></div>
+        <div class="logo"onclick="window.location.href='homepage.php?id=<?php echo $id; ?>';"></div>
         <div class="search">
             <img src="../images/searchicon.png">
             <input type="text" class="searchbar" placeholder="Search...">
@@ -347,8 +348,8 @@
                 </div>
             </div>
             <div class="btn">
-                <button>Follow</button>
-                <button onclick="openPopup()">Message</button>
+                <button onclick="follow()" id="follow">Follow</button>
+                <button onclick="openPopup()" id="message">Message</button>
             </div>
         </div>
         <div class="location">
@@ -501,9 +502,35 @@
 <script>
     function openPopup() {
         document.getElementById("mPopup").style.display = "block";
+        let btn = document.getElementById("message");
+        btn.style.backgroundColor = "#b6d985";
+        btn.style.color = "#154326";
+        btn.style.border = "2px solid #154326";
+        btn.style.fontsize = "15px";
     }
     function closePopup() {
         document.getElementById("mPopup").style.display = "none";
+        let btn = document.getElementById("message");
+        btn.style.backgroundColor = "#38843a";
+        btn.style.color = "white";
+        btn.style.border = "2px solid white";
+    }
+    function follow() {
+        let btn = document.getElementById("follow");
+
+        if (btn.innerHTML == "Followed"){
+            btn.style.backgroundColor = "#38843a";
+            btn.style.color = "white";
+            btn.innerHTML = "Follow";
+            btn.style.border = "2px solid white";
+
+        } else {
+            btn.style.backgroundColor = "#b6d985";
+            btn.style.color = "#154326";
+            btn.innerHTML = "Followed";
+            btn.style.border = "2px solid #154326";
+            btn.style.fontsize = "15px";
+        }
     }
 </script>
 <?php
