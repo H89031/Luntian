@@ -2,7 +2,7 @@
 	$server = "localhost";
 	$username = "root";
 	$password = "";
-	$database = "db_luntian236v2";
+	$database = "db_luntian236ver2";
 
 	$con = new mysqli($server, $username, $password, $database);
 ?>
