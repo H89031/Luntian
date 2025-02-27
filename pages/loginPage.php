@@ -11,7 +11,9 @@
 	<body>
 		<div class="container">
 			<div class="left-container">
-                <h1>Committed To Your Growth</h1>
+				<h1>Lush,<br>
+                    Green,<br>
+                    Luntian.</h1>
             </div>
             <div class="form-container sign-in">
                 <form action="" method="POST">

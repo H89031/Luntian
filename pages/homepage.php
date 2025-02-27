@@ -164,7 +164,7 @@
             <a href="profile.php?id=<?php echo $id; ?>" style="text-decoration-color: white;"><p id="usrName" style="margin: 0; font-size: 20px; color: white;">Username</p></a>
         </div>
     </div>
-    <div class="header">Tagline</div>
+    <div class="header">Lush, Green, Luntian.</div>
     <div class="main">
         <div class="grid-item" onclick="window.location.href='product1.php?id=<?php echo $id; ?>';">
             <img src="../images/SnakePlant.jpg">

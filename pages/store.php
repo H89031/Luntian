@@ -356,10 +356,12 @@
             <div style="width: 200px; display: flex; flex-direction: column; justify-content: space-around; padding-top: 8px; padding-bottom: 8px;">
                 <p>P3C2+PHM</p>
                 <p>Don Marcos Avenue</p>
-
+                
                 <p>0991 234 5678</p>
             </div>
-            <img src="../images/map.png" style="border-radius: 8px;">
+            <a href="https://maps.app.goo.gl/2d2DYvsLnKuPeDex5">
+                <img src="../images/map.png"  style="border-radius: 8px;">
+            </a>
         </div>
     </div>  
 

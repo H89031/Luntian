@@ -45,13 +45,13 @@ body {
 
 
 .left-container h1 {
-    font-size: 3rem;
-    font-family: 'Futura' sans-serif;
+    font-size: 60px;
+    font-family: 'Futura', sans-serif;
     line-height: 1.5;
     letter-spacing: 1.5px;
-    font-weight: bold;
+    font-weight: 900;
     position: relative; 
-    top: -5px; 
+    top: -27px; 
     left: -6px; 
 }
 

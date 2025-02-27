@@ -441,10 +441,11 @@
 </body>
 </html>
 <script type="text/javascript">
-    document.addEventListener("DOMContentLoaded", function () {
+        document.addEventListener("DOMContentLoaded", function () {
         let checkedProducts = JSON.parse(localStorage.getItem("checkedProducts")) || [];
         let productContainer = document.querySelector(".cart");
         let subtotal = 0;
+        let prod = 0;
 
         checkedProducts.forEach(product => {
             let price = (product.price * (product.quantity || 1));
@@ -461,10 +462,11 @@
                 </div>
             `;
             subtotal += (product.price * (product.quantity || 1));
+            prod += 1;
         });
 
         let shippingFee = 50; 
-        let handlingFee = 5;
+        let handlingFee = 5 * prod;
         let discount = 0; 
         let totalPayment = subtotal + shippingFee + handlingFee - discount;
 
@@ -473,7 +475,7 @@
         document.getElementById("handling").innerHTML = `₱${handlingFee}`;
         document.getElementById("discount").innerHTML = `₱${discount}`;
         document.getElementById("totalulit").innerHTML = `₱${totalPayment}`;
-        document.getElementById("totalulitt").innerHTML = `₱${totalPayment}`;
+        document.getElementById("totalulitt").innerHTML =`₱${totalPayment}`;
     });
 
     function remove() {
